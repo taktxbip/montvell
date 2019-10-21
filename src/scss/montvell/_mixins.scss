@@ -1,0 +1,89 @@
+%clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+
+@function rem($size) {
+  $remSize: $size / $body-font-size;
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+
+
+
+@mixin bg($bgColor: white){
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: calc(100% + 15px);
+      margin-left: -100vw;
+      z-index: -1; 
+      width: 500vw;
+      background-color: $bgColor;
+    }
+}
+
+
+
+
+
+/* mixin for multiline */
+@mixin mElipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount; 
+  text-align: left;
+  margin-right: -1em;
+  padding-right: 1em;
+//   &:before {
+//     content: '...';
+//     position: absolute;
+//     right: 15px;
+//     bottom: 0;
+//   }
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     right: 0;
+//     width: 1em;
+//     height: 1em;
+//     margin-top: 0.2em;
+//     background: $bgColor;
+//   }
+}
+
+
+
+/* mixin for center both h and v */
+@mixin cvh() {
+    position: absolute;
+    top: 50%; 
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+
+/* mixin for center v */
+@mixin cv() {
+    position: absolute;
+    top: 50%; 
+    transform: translate(0, -50%);
+}

@@ -1,0 +1,81 @@
+$bgc: #f4f4f4;
+
+//-------------------------
+//-- Template Product Start --
+//-------------------------
+.template-product {
+  .Product__Slideshow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .Carousel__Cell {
+      width: calc(50% - 15px);
+      height: 0;
+			padding-bottom: calc(50% - 15px);
+			overflow: hidden;
+      &:first-child {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+      }
+    }
+  }
+}
+
+//-------------------------
+//-- Template Collection Start --
+//-------------------------
+// body.template-product,
+body.template-collection {
+  background-color: $bgc;
+}
+
+.template-collection {
+  .PageHeader {
+    padding: 50px 0;
+    margin: 0;
+    background-color: #fff;
+  }
+  .ProductItem {
+    &__Wrapper {
+      background-color: #fff;
+		}
+		&__Info {
+			padding: 0 20px;
+		}
+		.ProductItem__Image {
+			transform: translate(-50%, -50%) scale(.9);
+		}
+  }
+  .arv-collection {
+    background-color: #fff;
+    padding: 0 20px 20px;
+  }
+}
+
+//-------------------------
+//-- Template Product Start --
+//-------------------------
+.template-product {
+	.Product__Info {
+		// margin-top: 50px;
+		// padding: 30px;
+		background-color: #fff;
+	}
+	#shopify-ali-review {
+		// background-color: $bgc;
+	}
+}
+
+//-------------------------
+//-- Instagram Start --
+//-------------------------
+
+section[data-section-type='instagram'] {
+	background-color: #222;
+	h3,
+	h2 {
+		color: #fff;
+	}
+}
