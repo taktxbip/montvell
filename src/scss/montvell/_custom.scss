@@ -1,4 +1,86 @@
 $bgc: #f4f4f4;
+$light-background: rgb(240, 240, 240);
+
+.template-product {
+  .alireview-form-title,
+.cbb-also-bought-title {
+  font-family: Futura,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
+}
+
+.cbb-frequently-bought-container {
+  border: 1px solid $light-background;
+}
+
+.cbb-frequently-bought-selector-list {
+  margin-top: 20px;
+  li {
+  	margin-bottom: 15px;
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+.cbb-frequently-bought-selector-label-compare-at-price:after {
+  content: "";
+  display: block;
+}
+
+.cbb-frequently-bought-form {
+  width: 100%;
+}
+
+
+.Slideshow--fullscreen .Slideshow__Image {
+	object-position: right;
+}
+
+#section-slideshow {
+  	.SectionHeader {
+      display: inline-flex;
+      flex-direction: column;
+  	}
+  	.SectionHeader__SubHeading,
+	.SectionHeader__Heading {
+  		text-shadow: 1px 1px 1px rgba(255,255,255,.3);
+      	padding: 5px 20px;
+  		display: inline-block;
+  		background-color: #fff;
+	}
+  .SectionHeader__SubHeading {
+    margin-bottom: 0;
+  }
+
+}
+
+.product_features {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 20px 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.product_features__item {
+      	padding: 0 15px;
+		text-align: center;
+		svg { margin-bottom: 10px; }
+		h5 {
+			font: normal normal 16px / 1.5 Futura, sans-serif;
+			text-transform: uppercase;
+			color: #222;
+			margin-bottom: 0;
+		}
+		.subtitle {
+			font: normal normal 14px/1.5 'Century Gothic', sans-serif;
+			color: #5c5c5c;
+		}
+	}
+}
+
+
+
 
 
 //-------------------------
@@ -49,7 +131,6 @@ body.template-collection {
 //-------------------------
 //-- Instagram Start --
 //-------------------------
-
 section[data-section-type='instagram'] {
 	background-color: #222;
 	h3,
