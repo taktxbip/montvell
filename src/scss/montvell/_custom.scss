@@ -3,12 +3,12 @@ $light-background: rgb(240, 240, 240);
 
 .template-product {
   .alireview-form-title,
-.cbb-also-bought-title {
-  font-family: Futura,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 22px;
-}
+  .cbb-also-bought-title {
+    font-family: Futura, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+  }
 }
 
 .cbb-frequently-bought-container {
@@ -18,8 +18,10 @@ $light-background: rgb(240, 240, 240);
 .cbb-frequently-bought-selector-list {
   margin-top: 20px;
   li {
-  	margin-bottom: 15px;
-    &:last-child { margin-bottom: 0; }
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -32,56 +34,52 @@ $light-background: rgb(240, 240, 240);
   width: 100%;
 }
 
-
 .Slideshow--fullscreen .Slideshow__Image {
-	object-position: right;
+  object-position: right;
 }
 
 #section-slideshow {
-  	.SectionHeader {
-      display: inline-flex;
-      flex-direction: column;
-  	}
-  	.SectionHeader__SubHeading,
-	.SectionHeader__Heading {
-  		text-shadow: 1px 1px 1px rgba(255,255,255,.3);
-      	padding: 5px 20px;
-  		display: inline-block;
-  		background-color: #fff;
-	}
+  .SectionHeader {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .SectionHeader__SubHeading,
+  .SectionHeader__Heading {
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+    padding: 5px 20px;
+    display: inline-block;
+    background-color: #fff;
+  }
   .SectionHeader__SubHeading {
     margin-bottom: 0;
   }
-
 }
 
 .product_features {
-	border-bottom: 1px solid #f0f0f0;
-	padding: 20px 0;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	.product_features__item {
-      	padding: 0 15px;
-		text-align: center;
-		svg { margin-bottom: 10px; }
-		h5 {
-			font: normal normal 16px / 1.5 Futura, sans-serif;
-			text-transform: uppercase;
-			color: #222;
-			margin-bottom: 0;
-		}
-		.subtitle {
-			font: normal normal 14px/1.5 'Century Gothic', sans-serif;
-			color: #5c5c5c;
-		}
-	}
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .product_features__item {
+    padding: 0 15px;
+    text-align: center;
+    svg {
+      margin-bottom: 10px;
+    }
+    h5 {
+      font: normal normal 16px / 1.5 Futura, sans-serif;
+      text-transform: uppercase;
+      color: #222;
+      margin-bottom: 0;
+    }
+    .subtitle {
+      font: normal normal 14px/1.5 "Century Gothic", sans-serif;
+      color: #5c5c5c;
+    }
+  }
 }
-
-
-
-
 
 //-------------------------
 //-- Template Collection Start --
@@ -100,13 +98,13 @@ body.template-collection {
   .ProductItem {
     &__Wrapper {
       background-color: #fff;
-		}
-		&__Info {
-			padding: 0 20px;
-		}
-		.ProductItem__Image {
-			transform: translate(-50%, -50%) scale(.9);
-		}
+    }
+    &__Info {
+      padding: 0 20px;
+    }
+    .ProductItem__Image {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
   }
   .arv-collection {
     background-color: #fff;
@@ -118,23 +116,49 @@ body.template-collection {
 //-- Template Product Start --
 //-------------------------
 .template-product {
-	.Product__Info {
-		// margin-top: 50px;
-		// padding: 30px;
-		background-color: #fff;
-	}
-	#shopify-ali-review {
-		// background-color: $bgc;
-	}
+  .Product__Info {
+    // margin-top: 50px;
+    // padding: 30px;
+    background-color: #fff;
+  }
+  #shopify-ali-review {
+    // background-color: $bgc;
+  }
+}
+
+.template-product {
+  .Price--compareAt .money {
+    font-size: rem(14px);
+  }
+  .sizing-chart-modal-link.with-icon {
+		text-align: center;
+		width: calc(50% - 5px);
+		padding: 10px 20px !important;
+		border: 1px solid #e7e7e7;
+		border-radius: 0;
+    span {
+      text-transform: uppercase;
+      font: 400 normal rem(13px) / 1.4 Futura, sans-serif;
+      text-align: center;
+      letter-spacing: 0.2em;
+			text-decoration: none;
+			padding-left: 5px;
+			img {
+				position: relative;
+				margin: 0 10px 0 0;
+				display: inline-block;
+			}
+    }
+  }
 }
 
 //-------------------------
 //-- Instagram Start --
 //-------------------------
-section[data-section-type='instagram'] {
-	background-color: #222;
-	h3,
-	h2 {
-		color: #fff;
-	}
+section[data-section-type="instagram"] {
+  background-color: #222;
+  h3,
+  h2 {
+    color: #fff;
+  }
 }
